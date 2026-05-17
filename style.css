@@ -1,0 +1,247 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #111;
+  color: white;
+  padding-top: 80px;
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #cccccc;
+}
+
+.menu-button {
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 18px 32px;
+  margin: 12px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 20px red;
+}
+
+.menu-button:hover {
+  background: darkred;
+  transform: scale(1.05);
+}
+
+#howToPlayText {
+  max-width: 500px;
+  margin: 30px auto;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #eeeeee;
+}
+
+#redButton {
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 220px;
+  height: 220px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 30px red;
+}
+
+#redButton:hover {
+  background: darkred;
+  transform: scale(1.05);
+}
+
+.danger-effect {
+  animation: shake 0.4s, emergencyFlash 0.4s;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
+  75% { transform: translateX(-10px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes emergencyFlash {
+  0% { background: #111; }
+  20% { background: red; }
+  40% { background: #111; }
+  60% { background: red; }
+  80% { background: darkred; }
+  100% { background: #111; }
+}
+
+.fake-button {
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 20px red;
+  position: fixed;
+}
+
+.fake-button:hover {
+  background: darkred;
+  transform: scale(1.05);
+}
+
+.sad-mode {
+  background: black;
+  color: white;
+}
+
+.sad-message {
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 120px;
+}
+
+.mini-button {
+  background: red !important;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px !important;
+  height: 45px !important;
+  font-size: 10px !important;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px red;
+  margin-top: 40px;
+}
+
+.happy-mode {
+  background: #64d96b;
+  color: #111;
+}
+
+.happy-button {
+  background: limegreen !important;
+  box-shadow: 0 0 30px limegreen !important;
+}
+
+/* ORION REALM */
+
+#realmScreen {
+  min-height: 100vh;
+  padding-top: 80px;
+  background: radial-gradient(circle, #30145c, #05000f 70%);
+  color: white;
+}
+
+.realm-title {
+  font-size: 56px;
+  color: #b388ff;
+  text-shadow: 0 0 20px #b388ff;
+}
+
+.realm-text {
+  font-size: 24px;
+  color: #eeeeff;
+  text-shadow: 0 0 10px #7c4dff;
+}
+
+#starButton {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  background: none;
+  border: none;
+  color: #fff176;
+  font-size: 70px;
+  cursor: pointer;
+  text-shadow: 0 0 20px #fff176, 0 0 40px #b388ff;
+  animation: starPulse 1s infinite;
+}
+
+#starButton:hover {
+  color: white;
+}
+
+@keyframes starPulse {
+  0% {
+    text-shadow: 0 0 20px #fff176, 0 0 40px #b388ff;
+  }
+
+  50% {
+    text-shadow: 0 0 35px #fff176, 0 0 70px #b388ff;
+  }
+
+  100% {
+    text-shadow: 0 0 20px #fff176, 0 0 40px #b388ff;
+  }
+}
+
+.star-power-1 {
+  text-shadow: 0 0 25px #fff176, 0 0 50px #b388ff !important;
+}
+
+.star-power-2 {
+  text-shadow: 0 0 40px #fff176, 0 0 80px #b388ff !important;
+}
+
+.star-power-3 {
+  text-shadow: 0 0 60px #fff176, 0 0 120px #b388ff !important;
+}
+
+.star-power-4 {
+  text-shadow: 0 0 90px #fff176, 0 0 180px #b388ff !important;
+}
+
+.star-burst {
+  animation: starBurst 0.8s forwards !important;
+}
+
+@keyframes starBurst {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(3) rotate(180deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.secret-reveal {
+  font-size: 32px;
+  color: #fff176;
+  text-shadow: 0 0 20px #fff176, 0 0 40px #b388ff;
+  animation: secretReveal 1.5s forwards;
+}
+
+@keyframes secretReveal {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

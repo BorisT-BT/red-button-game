@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Red Button Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="menuScreen">
+    <h1>RED BUTTON GAME</h1>
+    <p class="subtitle">A very serious game about not pressing a button.</p>
+
+    <button id="startButton" class="menu-button">Start Game</button>
+    <button id="howToPlayButton" class="menu-button">How to Play</button>
+    <button id="enterCodeButton" class="menu-button">Enter Code</button>
+
+    <p id="howToPlayText" class="hidden">
+      Press the red button. Catch it when it runs away. Find the real button. Then cheer it up.
+      <br><br>
+      Secret code hint: Orion watches the stars.
+      <br><br>
+      Warning: the button is dramatic.
+    </p>
+  </div>
+
+  <div id="realmScreen" class="hidden">
+    <h1 class="realm-title">THE ORION REALM</h1>
+
+    <p id="realmMessage" class="realm-text">
+      Catch the star 5 times to unlock Orion's secret.
+    </p>
+
+    <p class="realm-text">
+      Stars caught: <span id="starCount">0</span> / 5
+    </p>
+
+    <button id="starButton">★</button>
+
+    <br><br>
+
+    <button id="leaveRealmButton" class="menu-button">Return to Menu</button>
+  </div>
+
+  <div id="gameScreen" class="hidden">
+    <h1 id="title">Do NOT press the red button</h1>
+
+    <button id="redButton">DO NOT PRESS</button>
+
+    <p id="message">Seriously. Don't do it.</p>
+    <p>Pressed: <span id="count">0</span> times</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
